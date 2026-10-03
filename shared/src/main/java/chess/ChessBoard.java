@@ -13,10 +13,20 @@ public class ChessBoard {
 
     ChessPiece[][] squares = new ChessPiece[8][8];
     public static final int BOARD_SIZE = 8;
+    
     public ChessBoard() {
         
     }
+    //copy constructor
+    public ChessBoard(ChessBoard other) {
+        for (int row = 0; row < BOARD_SIZE; row++){
+            for (int col = 0; col< BOARD_SIZE; col++){
+                squares[row][col] = other.squares[row][col];
+            }
+        }
+    }//end copy constructor
 
+    
     /**
      * Adds a chess piece to the chessboard
      *
