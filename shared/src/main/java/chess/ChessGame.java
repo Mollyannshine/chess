@@ -15,6 +15,7 @@ public class ChessGame {
     private ChessBoard board;
     private TeamColor teamTurn;
     //testing
+    //testing two
 
     public ChessGame() {
         board = new ChessBoard();
